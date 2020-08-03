@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Ecommerce Sederhana</title>
+                <style>
+                /* table */
+                table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;}
+                table{
+                    margin: 0 auto;
+                    text-align: center;   
+                }
+
+                table.one {
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+
+                table.inside {
+                    margin: 20px;
+                }
+
+                thead th {
+                    padding: 20px;
+                }
+                </style>
+                <script defer src="./ecommerce.js"></script>
+        </head>
+            <center>
+                <h1><b>E commerce Sederhana</b></h1>
+            </center>
+        <body>
+        <center>
+            <table>
+                <tr>
+                <th> No </th>
+                <th> Nama Produk </th> 
+                <th> Harga </th> 
+                <th> Gambar </th>
+                <th> Action </th>
+                </tr>
+                <tr>
+                <td> 1 </td>
+                <td id="nama1"> Ciki 1 </td> 
+                <td id="harga1"> 10000 </td> 
+                <td id="gambar1"><img src="ciki1.jpg" height="100" width="100" /></td>
+                <td id="button1"> <input type="button" value="Tambahkan" onclick="addProduk(1)" id="button1" ></td>
+                </tr>
+                <tr>
+                <td> 2 </td>
+                <td id="nama2"> Ciki 2 </td> 
+                <td id="harga2"> 15000 </td> 
+                <td id="gambar2"> <img src="ciki2.jpg" height="100" width="100" /></td>
+                <td id="button2"><input type="button" value="Tambahkan" onclick="addProduk(2)" id="button2"></td>
+                </tr>
+
+                <tr>
+                <td> 3 </td>
+                <td id="nama3"> CIki 3 </td> 
+                <td id="harga3"> 20000 </td> 
+                <td id="gambar3"><img src="ciki3.jpg" height="100" width="100" /> </td>
+                <td id="button3"><input type="button" value="Tambahkan" onclick="addProduk(3)" id="button3"></td>
+                </tr>
+            </table>
+        </center> 
+        <center>
+            <h1 id="head"><b>Keranjang masih kosong</b></h1>
+        </center>
+            <style>
+                /* table */
+                table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;}
+                table{
+                    margin: 0 auto;
+                    text-align: center;   
+                }
+
+                table.one {
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+
+                table.inside {
+                    margin: 20px;
+                }
+
+                thead th {
+                    padding: 20px;
+                }
+                </style>
+                <center>
+                    <span id="total"></span>
+                </center><br>
+                <table id="produk">
+                </table> 
+                <center><br>
+                    <span id="checkOut"></span>
+                    <p id="pay"></p>
+                </center>
+    </body>
+</html>
+    
